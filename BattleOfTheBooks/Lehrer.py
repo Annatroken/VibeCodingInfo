@@ -1,3 +1,5 @@
+from inventar import Inventar
+
 class Lehrer:
 
     def __init__(self, name, fach):
