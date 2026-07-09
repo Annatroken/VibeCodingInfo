@@ -4,3 +4,5 @@ from .sportlehrer import Sportlehrer
 from .chemielehrer import Chemielehrer
 from .erdkundelehrer import Erdkundelehrer
 from .schulleiter import Schulleiter
+
+self.inventar = Inventar()
