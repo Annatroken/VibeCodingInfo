@@ -1,11 +1,14 @@
-from arena import Arena
-
+from buch import Buch
 from lehrer.mathelehrer import Mathelehrer
-from lehrer.deutschlehrer import Deutschlehrer
 
-arena = Arena("Bücherkeller")
+spieler = Mathelehrer("Herr Euler")
 
-spieler1 = Mathelehrer("Herr Euler")
-spieler2 = Deutschlehrer("Herr Goethe")
+buch = Buch("Mathematik-Lexikon", angriff=20)
 
-arena.kampf_starten(spieler1, spieler2)
+spieler.inventar.buch_hinzufuegen(buch)
+
+spieler.inventar.anzeigen()
+
+spieler.inventar.buch_verwenden(0, spieler)
+
+print(spieler.angriff)
